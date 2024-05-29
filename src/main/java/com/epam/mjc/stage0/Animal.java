@@ -2,9 +2,9 @@ package com.epam.mjc.stage0;
 
 public class Animal {
 
-    public String color;
-    public int numberOfPaws;
-    public boolean hasFur;
+    private String color;
+    private int numberOfPaws;
+    private boolean hasFur;
 
     public Animal(){}
 
@@ -13,7 +13,7 @@ public class Animal {
         this.numberOfPaws = numberOfPaws;
         this.hasFur = hasFur; }
 
-        public  void getDescription () {
+        public String getDescription () {
             String s;
             if (hasFur) {
                 s = " a ";
@@ -29,6 +29,6 @@ public class Animal {
 
             }
 
-            System.out.println(result);
+          return result;
     }
     }
